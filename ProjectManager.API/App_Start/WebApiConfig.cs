@@ -16,8 +16,8 @@ namespace ProjectManager.API
             //config.MapHttpAttributeRoutes();
 
             // enable cors for cross domain request
-            var cors = new EnableCorsAttribute("*", "*", "*");
-            config.EnableCors(cors);
+            //var cors = new EnableCorsAttribute("*", "*", "*");
+            config.EnableCors();
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
